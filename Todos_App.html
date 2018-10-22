@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./style/materialize.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./style/style.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div class="container oneContainer">
+        <div class="row bgImg">
+            <div class="col s8 logoSection">
+                <p class="logoDesigning">IRUMZAS Todo's</p>
+            </div>
+            <div class="col s4 ">
+                <!-- <div class="asgnmntDetails">
+                    <center>
+                        <h4>Developed By</h4>
+                        <h5>Ahmed Bilal
+                            <br /> R# 4682
+                            <br /> Section: C</h5>
+                    </center> -->
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="container appArea">
+        <div class="row appDivision">
+            <div class="col s3 mnuSection">
+                <br />
+                <br />
+                <p class="mnuHead">My Today</p>
+                <br />
+                <p class="mnuHd" id="menu" onclick=" taskSelection0();">Menu</p>
+                <p class="mnuItem" id="myToday" onclick=" taskSelection1(); degenerateList(0);">My Today!</p>
+                <p class="mnuItem" id="addnew" onclick=" taskSelection3(); toAddNew();">Add new!</p>
+                <p class="mnuItem" id="frmt" onclick=" taskSelection2();">Format List!</p>
+                <p class="mnuItem" id="help" onclick=" taskSelection4();">User Help!</p>
+                <p class="mnuItem" id="about" onclick=" taskSelection5();">About App!</p>
+                <br />
+                <center>
+                <p>&copy ISH-2018</p>
+            </center>            
+            </div>
+            <div class="col s9 workArea">
+                <div class="dateArea">
+                    <br />
+                    <center>
+                        <span class="dateDay">Date</span>
+                        <span class="otdate" id="todate">...............</span>
+                        <span class="dateDay">Day</span>
+                        <span class="otday" id="todin">..............</span>
+                    </center>
+                    <br />
+                </div>
+                <div class="listArea">
+                    <div class="otPageTitle" id="activityTitle">
+                        You are welcome here!!
+                    </div>
+                    <center>
+                        <div class="otListTask" id="otList">
+                            <table class="tab" id="pr">
+                            <!-- Display Board -->
+                            </table>
+                        </div>
+                    </center>
+                </div>
+                <div class="btnArea">
+                    <img class="small material-icons butn" id="adnw" onclick=" taskSelection3(); toAddNew();" src="image/addicon2.png" width="50"
+                        height="50">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="./script/script.js">
+
+    </script>
+
+</body>
+
+</html>

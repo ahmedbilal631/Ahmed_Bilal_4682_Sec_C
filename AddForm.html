@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <style>
+    body{
+        background-image: url('./image/img5.jpg');
+        /* background-position: center; */
+        background-repeat: no-repeat;
+    }
+    .addForm{
+        /* margin: 150px; */
+    }
+    table, td{
+        padding: 10px;
+        /* border: 2px solid white; */
+    }
+    .formHeading{
+        font-size: 35px;
+        font-weight: bold;
+        text-align: center;
+        border-bottom: 4px double white;
+    }
+    .lable{
+        color: white;
+        font-weight: bold;
+    }
+    #txtTaskName, #txtTaskDetail, #txtLoc{
+        width: 300px;
+        height: 30px;
+    }
+    .addTaskBtn{
+        text-align: center;
+    }
+    #btnTask{
+        width: 500px;
+        height: 30px;
+        font-weight: bold;
+    }
+
+    </style>
+    
+</head>
+<body>
+    <div class="container-fluid">
+        <center>
+            <div class="addForm">
+                <table>
+                    <tr>
+                        <td class="formHeading" colspan="2">Add Your Task</td>
+                    </tr>
+                <tr>
+                <td class="lable">Name_Task</td><td><input type="text" id="txtTaskName"></td>
+            </tr>
+            <tr>
+                
+                <td class="lable">Location</td><td><input type="text" name="jaa" id="txtLoc"></td>
+            </tr>
+            <tr>
+                <td class="lable">Task_Details</td><td><textarea name="dt" id="txtTaskDetail"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2"><div class="addTaskBtn"><button  id="btnTask" onclick=" app();" >Add Task</button></div></td>
+            </tr>
+            </table>
+            </div>
+            <div id="otList">
+
+            </div>
+        </center>
+    </div>
+    <script>
+    //Decalration of the contructor funtion to create objects
+    function Task(nme, loc, det) {
+        this.name = nme;
+        this.loc = loc;
+        this.detail = det;
+    }
+    //now the function to add new task
+    var arr = []; //defined an array to store objects
+    //to retrieve data from local storage if something is there
+    // retrieve stored data (JSON stringified) and convert
+        var i = arr.length; 
+        function app() {
+            // alert("Add now");
+            //get new strings
+            //to retrieve data from local storage if something is there
+    // retrieve stored data (JSON stringified) and convert
+    var storedData = localStorage.getItem("list_data_key");
+        if (storedData) {
+            arr = JSON.parse(storedData);
+        }
+        //Recieving new data via form
+            var name = document.getElementById('txtTaskName').value;
+            var loc = document.getElementById('txtLoc').value;
+            var detail = document.getElementById('txtTaskDetail').value;
+            //calling to obj
+            var todo = new Task(name, loc, detail);//made a new object
+            //append the value
+            arr.push(todo);
+            // store array to localstorage
+        localStorage.setItem("list_data_key", JSON.stringify(arr));
+        document.getElementById('otList').innerHTML = "Appended Sucessfully!!";
+        window.close();//Going back to home
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Edit Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    body{
+        background-image: url('./image/img5.jpg');
+        background-repeat: no-repeat;
+    }
+    .addForm{
+    }
+    table, td{
+        padding: 10px;
+    }
+    .formHeading{
+        font-size: 35px;
+        font-weight: bold;
+        text-align: center;
+        border-bottom: 4px double white;
+    }
+    .lable{
+        color: white;
+        font-weight: bold;
+    }
+    #txtTaskName, #txtTaskDetail, #txtLoc{
+        width: 300px;
+        height: 30px;
+    }
+    .addTaskBtn{
+        text-align: center;
+    }
+    #btnTask{
+        width: 500px;
+        height: 30px;
+        font-weight: bold;
+    }
+
+    </style>
+    
+</head>
+<body>
+    <div class="container-fluid">
+        <center>
+            <div class="addForm">
+                <table>
+                    <tr>
+                        <td class="formHeading" colspan="2">Edit Your Task</td>
+                    </tr>
+                <tr>
+                <td class="lable">Name_Task</td><td><input type="text" id="txtTaskName"></td>
+            </tr>
+            <tr>
+                
+                <td class="lable">Location</td><td><input type="text" name="jaa" id="txtLoc"></td>
+            </tr>
+            <tr>
+                <td class="lable">Task_Details</td><td><textarea name="dt" id="txtTaskDetail"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2"><div class="addTaskBtn"><button  id="btnTask" onclick=" update();" >Update</button></div></td>
+            </tr>
+            </table>
+            </div>
+            <div id="otList">
+
+            </div>
+        </center>
+    </div>
+    <script src="./script/editScript.js">   
+    </script>
+</body>
+</html>

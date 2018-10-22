@@ -1,0 +1,172 @@
+.oneContfsainer{
+    border: 2px solid black;
+}
+.bgImg{
+    border-bottom: 5px double black;
+    height: 200px;
+    background-image: url('../image/img3.jpg');
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 2px;
+}
+.logoSection{
+    /* border: 2px solid black; */
+}
+.logoDesigning{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: serif;
+    border-bottom: 5px double white;
+    color: white;
+    width: 270px;
+    margin-top: 40px;
+    
+}
+.asgnmntDetails{
+    border: 2px solid black;
+    margin-top: 25px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    width: 300px;
+    border-radius: 30px;
+
+    
+
+}
+.mnuSection{
+    border-right: 5px double black;
+    border-left: 2.5px solid black;
+    border-bottom: 2.5px solid black;
+    height: 600px;
+}
+.mnuHead{
+    border-bottom: 4px double black;
+    font-size: 30px;
+    font-weight: bold;
+}
+.mnuHd{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 3px solid black;
+}
+.mnuItem{
+    padding: 10px;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+}
+.mnuItem:hover{
+    background-color: deeppink;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+}
+
+
+.workArea{
+    height: 600px;
+    background-image: url('../image/img5.jpg');
+    background-position: left center;
+    border-right: 2.5px solid black;
+    border-bottom: 2.5px solid black;
+    /* border: 2px solid black; */
+}
+.dateArea{
+    /* border: 2px solid black;    */
+}
+.dateDay{
+    padding: 10px;
+    font-weight: bold;
+    font-size: 25px;
+color: white;
+    border-bottom: 3px double white;
+}
+.otdate, .otday{
+    font-weight: bold;
+    font-size: 25px;
+padding: 10px;
+margin-left:20px;
+margin-right: 20px;
+border-bottom: 3px double white;
+color: white;
+}
+.listArea{
+    height: 400px;
+    
+    /* border: 2px solid black; */
+}
+.otListTask{
+    margin-top: 10px;
+    height: 350px;
+    overflow: scroll;
+}
+.firstRow{
+    border-bottom: 3px solid white;
+}
+.cl, .hdcl {
+    border-left: 3px solid white;
+    border-bottom: 1px solid white;
+}
+.hdcl{
+    background-color: darkviolet;
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+}
+.cl{
+    background-color: deeppink;
+    color: white;
+    font-weight: bold;
+}
+.imp{
+    background-color: yellow;
+    color: red;
+}
+.tbBtn{
+    padding: 5px;
+    width: 60px;
+    font-weight: bold;
+    background-color: darkviolet;
+    color: white;
+}
+.tbBtn:hover{
+    padding: 5px;
+    width: 60px;
+    font-weight: bold;
+    background-color: deeppink;
+    color: white;
+}
+
+.btnArea{
+    margin-top: 35px;
+    text-align: end;
+
+    /* border: 2px solid black; */
+}
+.butn:hover{
+    width: 60px;
+    height: 60px;
+}
+.otPageTitle{
+    text-align: center;
+    margin-top: 10px;
+    border-bottom: 4px double white;
+    border-top: 4px double white;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+.pro{
+    font-weight: bold;
+    text-align: center;
+    margin: 20px;
+    color: white;
+    margin-top: 20px;
+
+}
+.img{
+    text-align: center;
+}
